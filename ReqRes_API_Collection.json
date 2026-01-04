@@ -1,0 +1,48 @@
+GET – List Users
+GET https://reqres.in/api/users?page=2
+
+
+Tests (Postman):
+
+pm.test("Status code is 200", function () {
+    pm.response.to.have.status(200);
+});
+
+-------------------------------------------------------------------------
+POST – Create User
+POST https://reqres.in/api/users
+
+
+Body (JSON):
+
+{
+  "name": "Jahanzeib",
+  "job": "QA Engineer"
+}
+Tests:
+
+pm.test("User created", function () {
+    pm.response.to.have.status(201);
+});
+
+--------------------------------------------------------
+🔹 PUT – Update User
+PUT https://reqres.in/api/users/2
+
+
+Tests:
+
+pm.test("User updated", function () {
+    pm.response.to.have.status(200);
+});
+
+---------------------------------------------------------
+DELETE – Delete User
+DELETE https://reqres.in/api/users/2
+
+
+Tests:
+
+pm.test("User deleted", function () {
+    pm.response.to.have.status(204);
+});
