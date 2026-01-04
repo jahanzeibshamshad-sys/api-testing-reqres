@@ -1,0 +1,6 @@
+| Test Case ID | API Name    | Method | Request           | Expected Status | Expected Result    |
+| ------------ | ----------- | ------ | ----------------- | --------------- | ------------------ |
+| API_01       | Get Users   | GET    | /api/users?page=2 | 200             | User list returned |
+| API_02       | Create User | POST   | /api/users        | 201             | User created       |
+| API_03       | Update User | PUT    | /api/users/2      | 200             | User updated       |
+| API_04       | Delete User | DELETE | /api/users/2      | 204             | User deleted       |
